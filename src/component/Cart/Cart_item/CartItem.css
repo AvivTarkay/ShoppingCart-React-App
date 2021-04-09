@@ -1,0 +1,76 @@
+.cartItem {
+	margin-bottom: 1rem;
+	display: flex;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+	border-radius: 10px;
+}
+
+.cartItemImage {
+	width: 350px;
+	object-fit: contain;
+	border-radius: 10px;
+}
+
+.cartItemDetails {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: var(--secondary-color);
+}
+
+.detailsTitle {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.detailsDesc {
+	font-size: 0.8rem;
+}
+
+.detailsPrice {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.cartItemActions {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0.6rem;
+}
+
+.cartItemQty {
+	display: flex;
+	align-items: center;
+}
+
+.cartItemQty input {
+	padding: 10px;
+	margin-left: 0.4rem;
+	width: 60px;
+	border-radius: 10px;
+	border: 1px solid rgb(75, 75, 75);
+	outline: none;
+}
+
+.actionsDeleteItemBtn {
+	width: 50px;
+	height: 50px;
+	border: 1px solid rgb(75, 75, 75);
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all ease-in-out 0.7s;
+	outline: none;
+}
+
+.actionsDeleteItemBtn:hover {
+	transform: scale(1.2) rotate(360deg);
+	background-color: rgb(209, 15, 15);
+}
+
+.actionsDeleteItemBtn img {
+	width: 25px;
+	height: 25px;
+}

@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Redirect,
+} from "react-router-dom";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { connect } from "react-redux";
+
+import Navbar from "./component/Navbar/Navbar";
+import Products from "./component/Products/Products";
+import Cart from "./component/Cart/Cart";
+import SingleItem from "./component/Single_item/SingleItem";
+
+function App({ current }) {
+	return (
+		<Router>
+			<div className="app">
+				<Navbar />
+				<Switch>
+					<Route exact path="/" component={Products} />
+					<Route exact path="/cart" component={Cart} />
+					{!current ? (
+						<Redirect to="/" />
+					) : (
+						<Route exact path="/Product/:id" component={SingleItem} />
+					)}
+				</Switch>
+			</div>
+		</Router>
+	);
 }
 
-export default App;
+const mapStateToProps = state => {
+	return {
+		current: state.shop.currentItem,
+	};
+};
+
+export default connect(mapStateToProps)(App);

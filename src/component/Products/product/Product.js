@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Product.css";
-
 import { connect } from "react-redux";
 import {
 	addToCart,
@@ -9,38 +7,54 @@ import {
 } from "../../../redux/shopping/ShoppingActions";
 
 const Product = ({ productData, addToCart, loadCurrentItem }) => {
-	return (
-		<div className="product">
-			<img
-				className="productImage"
-				src={productData.img}
-				alt={productData.title}
-			/>
-			<div className="productDetails">
-				<p className="detailsTitle">{productData.title}</p>
-				<p className="detailsDesc">{productData.description}</p>
-				<p className="detailsPrice">$ {productData.price}</p>
-			</div>
+	const containerOnMove = e => {
+		//Movement Animation to happen
+		const body = document.querySelector("body");
+		body.classList.toggle("move");
+		const card = document.querySelectorAll(".container");
 
-			<div className="productButtons">
-				<Link to={`/Product/${productData.id}`}>
-					<button
-						onClick={() => {
-							loadCurrentItem(productData);
-						}}
-						className="buttonsBtn buttonsView"
-					>
-						View Item
-					</button>
-				</Link>
-				<button
-					onClick={() => {
-						addToCart(productData.id);
-					}}
-					className="buttonsBtn buttonsAdd"
-				>
-					Add To Cart
-				</button>
+		let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+		let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+		card.style = `transform:rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+	};
+	return (
+		<div class="container" onMouseMove={containerOnMove}>
+			<div className="card">
+				<div className="sneaker">
+					<div className="circle"></div>
+					<img src={productData.img} alt={productData.id} />
+				</div>
+
+				<div className="info">
+					<h1>{productData.title}</h1>
+					<h3>{productData.description}</h3>
+					<div className="sizes">
+						<button>39</button>
+						<button>40</button>
+						<button className="active">42</button>
+						<button>44</button>
+					</div>
+					<div className="purchase">
+						<Link to={`/Product/${productData.id}`}>
+							<button
+								onClick={() => {
+									loadCurrentItem(productData);
+								}}
+								className="detailsAddBtn"
+							>
+								View Item
+							</button>
+						</Link>
+						<button
+							onClick={() => {
+								addToCart(productData.id);
+							}}
+							className="detailsAddBtn"
+						>
+							Add To Cart
+						</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

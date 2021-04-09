@@ -1,0 +1,89 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20%;
+}
+.card {
+	transform-style: preserve-3d;
+	max-height: 70vh;
+	width: 25rem;
+	border-radius: 30px;
+	padding: 0rem 5rem;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+	.sneaker {
+		min-height: 35vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.circle {
+			width: 13rem;
+			height: 13rem;
+			background: linear-gradient(
+				to right,
+				rgba(245, 70, 66, 0.75),
+				rgba(8, 83, 156, 0.75)
+			);
+			position: absolute;
+			border-radius: 50%;
+			z-index: 1;
+		}
+		img {
+			width: 18rem;
+			z-index: 2;
+			transition: all 0.75s ease-out;
+		}
+	}
+}
+.info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h1 {
+		font-size: 20px;
+		transition: all 0.75s ease-out;
+	}
+	h3 {
+		font-size: 17px;
+		color: #585858;
+		margin-bottom: 5px;
+		font-weight: lighter;
+		transition: all 0.75s ease-out;
+	}
+	.sizes {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		transition: all 0.75s ease-out;
+		button {
+			padding: 0.5rem 2rem;
+			background: none;
+			border: none;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+			border-radius: 30px;
+			justify-self: center;
+			cursor: pointer;
+			font-weight: bold;
+			color: #585858;
+		}
+		.active {
+			background: #585858;
+			color: white;
+		}
+	}
+	.purchase {
+		margin: 15px 0 15px 0;
+		transition: all 0.75s ease-out;
+		button {
+			width: 100%;
+			padding: 1rem 0rem;
+			margin-bottom: 5px;
+			background: #f54642;
+			border: none;
+			color: white;
+			cursor: pointer;
+			border-radius: 30px;
+			font-weight: bolder;
+		}
+	}
+}

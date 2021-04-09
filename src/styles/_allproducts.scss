@@ -1,0 +1,9 @@
+.allProducts {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: 80px;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}

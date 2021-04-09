@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
 
 import { connect } from "react-redux";
 
@@ -18,6 +17,7 @@ const Navbar = ({ cart }) => {
 		<div className="NavBar">
 			<Link className="text_decoration" to="/">
 				<h2 className="NavbarLogo">Redux Shopping Cart</h2>
+				<span></span>
 			</Link>
 			<Link className="text_decoration" to="/cart">
 				<div className="NavCart">

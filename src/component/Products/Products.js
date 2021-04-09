@@ -1,15 +1,16 @@
 import React from "react";
-import "./Products.css";
 
 import Product from "./product/Product";
 import { connect } from "react-redux";
 
-const Products = ({ products }) => {
+const Products = ({ products, removeNav }) => {
 	return (
 		<div className="allProducts">
-			{products.map(product => (
-				<Product key={product.id} productData={product} />
-			))}
+			{React.Children.toArray(
+				products.map(product => (
+					<Product productData={product} removeNav={removeNav} />
+				))
+			)}
 		</div>
 	);
 };

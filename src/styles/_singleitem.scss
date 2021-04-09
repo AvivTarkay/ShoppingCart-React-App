@@ -1,0 +1,130 @@
+.container {
+	// height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.singleCard {
+	transform-style: preserve-3d;
+	min-height: 80vh;
+	width: 40rem;
+	border-radius: 30px;
+	padding: 0rem 5rem;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+	.sneaker {
+		min-height: 35vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.circle {
+			width: 25rem;
+			height: 25rem;
+			background: linear-gradient(
+				to right,
+				rgba(252, 170, 170, 0.75),
+				rgba(2, 56, 112, 0.75)
+			);
+			position: absolute;
+			border-radius: 50%;
+			z-index: 1;
+		}
+		img {
+			width: 35rem;
+			z-index: 2;
+			transition: all 0.75s ease-out;
+		}
+	}
+}
+.info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h1 {
+		font-size: 20px;
+		transition: all 0.75s ease-out;
+	}
+	h3 {
+		font-size: 17px;
+		color: #585858;
+		margin-bottom: 5px;
+		font-weight: lighter;
+		transition: all 0.75s ease-out;
+	}
+	.sizes {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		transition: all 0.75s ease-out;
+		button {
+			padding: 0.5rem 2rem;
+			background: none;
+			border: none;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+			border-radius: 30px;
+			justify-self: center;
+			cursor: pointer;
+			font-weight: bold;
+			color: #585858;
+		}
+		.active {
+			background: #585858;
+			color: white;
+		}
+	}
+	.purchase {
+		margin: 15px 0 15px 0;
+		transition: all 0.75s ease-out;
+		.purchaseBtn {
+			width: 150px;
+			padding: 1rem 0rem;
+			margin: 0 5px 10px 0;
+			background: #f54642;
+			border: none;
+			color: white;
+			cursor: pointer;
+			border-radius: 30px;
+			font-weight: bolder;
+		}
+	}
+}
+body.enter .singleCard {
+	transition: none;
+	.sneaker img {
+		transform: translateZ(200px) rotateZ(-45deg);
+	}
+	.info {
+		h1 {
+			transform: translateZ(150px);
+		}
+		h3 {
+			transform: translateZ(125px);
+		}
+		.sizes {
+			transform: translateZ(100px);
+		}
+		.purchase {
+			transform: translateZ(75px);
+		}
+	}
+}
+body.leave .card {
+	transition: all 0.5s ease;
+	transform: rotateY(0deg) rotateX(0deg);
+	.sneaker {
+		transform: translateZ(0px) rotateZ(0deg);
+	}
+	.info {
+		h1 {
+			transform: translateZ(0px);
+		}
+		h3 {
+			transform: translateZ(0px);
+		}
+		.sizes {
+			transform: translateZ(0px);
+		}
+		.purchase {
+			transform: translateZ(0px);
+		}
+	}
+}

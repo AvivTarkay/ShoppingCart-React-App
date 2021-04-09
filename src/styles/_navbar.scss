@@ -1,0 +1,59 @@
+.NavBar {
+	z-index: 1;
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.2rem;
+	margin-bottom: 5px;
+	background: rgb(10, 29, 44);
+	position: sticky;
+	top: 0;
+	left: 0;
+	.text_decoration {
+		text-decoration: none;
+	}
+	.NavbarLogo {
+		font-weight: bold;
+		color: #fff;
+		margin-left: 20px;
+	}
+}
+.NavCart {
+	background: #fff;
+	width: 160px;
+	height: 40px;
+	border: none;
+	border-radius: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem;
+	margin-right: 15px;
+	cursor: pointer;
+	&:hover {
+		opacity: 0.75;
+	}
+	.CartTitle {
+		font-size: 30px;
+		font-weight: bold;
+		color: rgb(48, 49, 51);
+	}
+	.CartImage {
+		width: 30px;
+		height: 30px;
+		object-fit: contain;
+	}
+	.CartCounter {
+		height: 40px;
+		width: 40px;
+		border: 1px solid #000;
+		border-radius: 50%;
+		color: rgb(48, 49, 51);
+		background: rgb(234, 238, 0);
+		font-size: 25px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

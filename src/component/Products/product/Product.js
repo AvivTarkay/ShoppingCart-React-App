@@ -29,7 +29,7 @@ const Product = ({ productData, addToCart, loadCurrentItem }) => {
 					<h1>{productData.title}</h1>
 					<h3>{productData.description}</h3>
 					<div className="sizes">
-						<button>39</button>
+						<button>37</button>
 						<button>40</button>
 						<button className="active">42</button>
 						<button>44</button>

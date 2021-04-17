@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import deleteFile from "../../../images/deleteFile.png";
 import { connect } from "react-redux";
 import {
 	removeFromCart,
@@ -39,10 +39,7 @@ const CartItem = ({ itemData, removeFromCart, adjustQuantity }) => {
 						removeFromCart(itemData.id);
 					}}
 				>
-					<img
-						src="https://image.flaticon.com/icons/svg/709/709519.svg"
-						alt=""
-					/>
+					<img src={deleteFile} alt="" />
 				</button>
 			</div>
 		</div>

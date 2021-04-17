@@ -1,4 +1,13 @@
 import * as actionTypes from "./ShoppingTypes";
+import jordan from "../../images/jordan.png";
+import AirJordan5 from "../../images/AirJordan5.png";
+import airMax from "../../images/airMax.png";
+import converse from "../../images/converse.png";
+import Kendrick from "../../images/Kendrick.png";
+import nikeVapor from "../../images/nikeVapor.png";
+import PinkJordans from "../../images/PinkJordans.png";
+import Reebok from "../../images/Reebok.png";
+import Yeezy from "../../images/Yeezy.png";
 
 const INITIAL_STATE = {
 	products: [
@@ -7,63 +16,63 @@ const INITIAL_STATE = {
 			title: "Air Jordans 1 Chicago",
 			description: "Available 2/17 at 5:00 PMStep .",
 			price: 140,
-			img: "/images/jordan.png",
+			img: jordan,
 		},
 		{
 			id: 2,
 			title: " Air Jordan 1 Mid GS ‘Pink Quartz’",
 			description: "Available 2/17 at 5:00 PMStep .",
 			price: 220,
-			img: "/images/PinkJordans.png",
+			img: PinkJordans,
 		},
 		{
 			id: 3,
 			title: "Air Jordan 5 Retro 'Stealth 2.0'",
 			description: "Available 2/17 at 5:00 PMStep .",
 			price: 210,
-			img: "/images/AirJordan5.png",
+			img: AirJordan5,
 		},
 		{
 			id: 4,
 			title: "Adidas Yeezy Boost 350 V2 Trfrm",
 			description: "Available 2/17 at 5:00 PMStep .",
 			price: 120,
-			img: "/images/Yeezy.png",
+			img: Yeezy,
 		},
 		{
 			id: 5,
 			title: "Nike Air Max 270 React Casual Running Shoes",
 			description: "Available 2/17 at 5:00 PMStep .",
 			price: 100,
-			img: "/images/airMax.png",
+			img: airMax,
 		},
 		{
 			id: 6,
 			title: " Chuck Taylor All Star Fresh",
 			description: "Available 2/17 at 5:00 PMStep .",
 			price: 320,
-			img: "/images/converse.png",
+			img: converse,
 		},
 		{
 			id: 7,
 			title: "Reebok CL Legacy X Assassins Creed",
 			description: "Available 2/17 at 5:00 PMStep .",
 			price: 170,
-			img: "/images/Reebok.png",
+			img: Reebok,
 		},
 		{
 			id: 8,
 			title: "Kendrick Lamar x Classic Leather GS D",
 			description: "Available 2/17 at 5:00 PMStep .",
 			price: 250,
-			img: "/images/Kendrick.png",
+			img: Kendrick,
 		},
 		{
 			id: 9,
 			title: "Nike VaporMax",
 			description: "Available 2/17 at 5:00 PMStep .",
 			price: 290,
-			img: "/images/nikeVapor.png",
+			img: nikeVapor,
 		},
 	], // {id, title, description, price, img}
 	cart: [], //{id, title, description, price, img, quantity}

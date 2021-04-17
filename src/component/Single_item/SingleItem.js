@@ -35,7 +35,8 @@ const SingleItem = ({ current, addToCart }) => {
 					<div className="circle"></div>
 					<img src={current.img} alt={current.id} />
 				</div>
-
+				<h3> ⬆ All the way up to remove Effect!</h3>
+				<h3> ➡ All the way right to start Effect ! </h3>
 				<div className="info">
 					<h1>{current.title}</h1>
 					<h3>{current.description}</h3>

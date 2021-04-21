@@ -1,3 +1,7 @@
+$desktop: 1200px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;
 .container {
 	display: flex;
 	justify-content: center;
@@ -7,6 +11,7 @@
 .card {
 	transform-style: preserve-3d;
 	max-height: 70vh;
+
 	width: 25rem;
 	border-radius: 30px;
 	padding: 0rem 5rem;

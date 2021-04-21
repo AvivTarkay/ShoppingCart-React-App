@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ShoppingCart-React-App/static/css/main.df7ba707.chunk.css",
+    "main.css": "/ShoppingCart-React-App/static/css/main.baf1770b.chunk.css",
     "main.js": "/ShoppingCart-React-App/static/js/main.6322dbf3.chunk.js",
     "main.js.map": "/ShoppingCart-React-App/static/js/main.6322dbf3.chunk.js.map",
     "runtime-main.js": "/ShoppingCart-React-App/static/js/runtime-main.4f288870.js",
@@ -10,7 +10,7 @@
     "static/js/3.483a80a6.chunk.js": "/ShoppingCart-React-App/static/js/3.483a80a6.chunk.js",
     "static/js/3.483a80a6.chunk.js.map": "/ShoppingCart-React-App/static/js/3.483a80a6.chunk.js.map",
     "index.html": "/ShoppingCart-React-App/index.html",
-    "static/css/main.df7ba707.chunk.css.map": "/ShoppingCart-React-App/static/css/main.df7ba707.chunk.css.map",
+    "static/css/main.baf1770b.chunk.css.map": "/ShoppingCart-React-App/static/css/main.baf1770b.chunk.css.map",
     "static/js/2.84b56ca9.chunk.js.LICENSE.txt": "/ShoppingCart-React-App/static/js/2.84b56ca9.chunk.js.LICENSE.txt",
     "static/media/AirJordan5.9e19c79d.png": "/ShoppingCart-React-App/static/media/AirJordan5.9e19c79d.png",
     "static/media/Kendrick.c0b68a37.png": "/ShoppingCart-React-App/static/media/Kendrick.c0b68a37.png",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.4f288870.js",
     "static/js/2.84b56ca9.chunk.js",
-    "static/css/main.df7ba707.chunk.css",
+    "static/css/main.baf1770b.chunk.css",
     "static/js/main.6322dbf3.chunk.js"
   ]
 }

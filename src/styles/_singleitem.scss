@@ -6,11 +6,11 @@ $phone: 480px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
 }
 .singleCard {
 	transform-style: preserve-3d;
-	min-height: 80vh;
+	min-height: 70vh;
+	margin-top: 2rem;
 	width: 40rem;
 	border-radius: 30px;
 	padding: 0rem 5rem;
@@ -19,7 +19,7 @@ $phone: 480px;
 		width: 32rem;
 	}
 	@media (max-width: $phone) {
-		width: 30rem;
+		width: 27rem;
 	}
 	.sneaker {
 		min-height: 35vh;
@@ -29,6 +29,7 @@ $phone: 480px;
 		@media (max-width: $tablet) {
 			height: 30vh;
 		}
+
 		.circle {
 			width: 25rem;
 			height: 25rem;
@@ -44,11 +45,18 @@ $phone: 480px;
 				width: 20rem;
 				height: 20rem;
 			}
+			@media (max-width: $tablet) {
+				width: 17rem;
+				height: 17rem;
+			}
 		}
 		img {
 			width: 35rem;
 			z-index: 2;
 			transition: all 0.75s ease-out;
+			@media (max-width: $tablet) {
+				width: 30rem;
+			}
 			@media (max-width: $tablet) {
 				width: 25rem;
 			}

@@ -17,7 +17,7 @@ import "./App.scss";
 function App({ current }) {
 	return (
 		<div className="app">
-			<Router>
+			<Router basename="ShoppingCart-React-App">
 				<Navbar />
 				<Switch>
 					<Route exact path="/">
